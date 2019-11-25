@@ -25,6 +25,7 @@ class Form extends Component {
                     <label htmlFor='username'>User Name</label>
                     <input
                         name='username'
+                        id='username'
                         type='text'
                         value={this.state.username}
                         onChange={this.handleChange}
