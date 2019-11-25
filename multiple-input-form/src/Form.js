@@ -39,6 +39,7 @@ class Form extends Component {
                     <input 
                         type='text'
                         name='username'
+                        id='username'
                         value={this.state.username}
                         onChange={this.handleChange}
                     />
@@ -46,13 +47,14 @@ class Form extends Component {
                     <input
                         type='email'
                         name='email'
+                        id='email'
                         value={this.state.email}
                         onChange={this.handleChange}
                     />
                     <label htmlFor='password'>Password</label>
                     <input
                         type='text'
-                        name='password'
+                        id='password'
                         value={this.state.password}
                         onChange={this.handleChange}
                     />
