@@ -10,6 +10,7 @@ class TodoList extends Component {
         }
         this.create = this.create.bind(this)
         this.remove = this.remove.bind(this)
+        this.update = this.update.bind(this)
     }
 
     create(newTodo) {
@@ -24,6 +25,14 @@ class TodoList extends Component {
         })
     }
 
+    update(id, updatedTask) {
+        const updatedTodos = this.state.todos.map(todo => {
+            if (todo.id === id) return { ...todo, task: updatedTask }
+            return todo
+        })
+        this.setState({ todos: updatedTodos })
+    }
+
     render() {
         const todos = this.state.todos.map(todo => {
            return ( 
@@ -31,7 +40,9 @@ class TodoList extends Component {
             key={todo.id}
             id={todo.id} 
             task={todo.task} 
-            removeTodo={this.remove} />
+            removeTodo={this.remove} 
+            updateTodo={this.update}
+            />
            )
         })
         return (
