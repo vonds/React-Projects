@@ -11,7 +11,7 @@ class JokeList extends Component {
     constructor(props) {
         super(props)
         this.state = { jokes: JSON.parse(window.localStorage.getItem("jokes") || "[]" ) }
-        this.handleVote = this.handleVote.bind(this)
+        this.handleClick = this.handleClick.bind(this)
     }
 
     componentDidMount() {
@@ -24,7 +24,9 @@ class JokeList extends Component {
             const res = await axios.get('https://icanhazdadjoke.com', { headers: { Accept: 'Application/json' } })
             jokes.push({ id: uuid(), text: res.data.joke, votes: 0 })
         }
-        this.setState({ jokes: jokes })
+        this.setState(state => ({
+            jokes: [...state.jokes, ...jokes]
+        }))
         window.localStorage.setItem('jokes', JSON.stringify(jokes))
     }
 
@@ -32,7 +34,14 @@ class JokeList extends Component {
         this.setState(state => ({
             jokes: state.jokes.map(joke =>
                  joke.id === id ? {...joke, votes: joke.votes + delta} : joke)
-        }))
+        }),
+        () => 
+            window.localStorage.setItem("jokes", JSON.stringify(this.state.jokes))
+        )
+    }
+
+    handleClick() {
+        this.getJokes()
     }
 
     render() {
@@ -41,7 +50,7 @@ class JokeList extends Component {
                 <section className='JokeList-sidebar'>
                     <h1 className='JokeList-title'><span>Punny</span> Jokes</h1>
                     <img src='https://assets.dryicons.com/uploads/icon/svg/8927/0eb14c71-38f2-433a-bfc8-23d9c99b3647.svg'></img>
-                    <button className='Jokelist-getmore'>New Jokes</button>
+                    <button className='Jokelist-getmore' onClick={this.handleClick}>New Jokes</button>
                 </section>
                 <section className='JokeList-jokes'>
                     {this.state.jokes.map(joke => (
