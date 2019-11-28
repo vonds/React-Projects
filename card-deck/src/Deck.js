@@ -47,8 +47,9 @@ class Deck extends Component {
         ))
         return (
             <section className='Deck'>
-                <h1>Card Dealer</h1>
-                <button onClick={this.getCard}>Get Card</button>
+                <h1 className='Deck-title'>Card Dealer</h1>
+                <h2 className='Deck-title subtitle'>A demo made with React</h2>
+                <button className='Deck-btn' onClick={this.getCard}>Get Card</button>
                 <section className='Deck-cardarea'>
                     {cards}
                 </section>
