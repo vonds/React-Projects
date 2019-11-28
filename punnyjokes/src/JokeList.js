@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import axios from 'axios'
+import './JokeList.css'
 
 class JokeList extends Component {
     static defaultProps = {
@@ -22,7 +23,11 @@ class JokeList extends Component {
     render() {
         return (
             <section className='JokeList'>
-                <h1>Punny Jokes</h1>
+                <section className='JokeList-sidebar'>
+                    <h1 className='JokeList-title'><span>Punny</span> Jokes</h1>
+                    <img src='https://assets.dryicons.com/uploads/icon/svg/8927/0eb14c71-38f2-433a-bfc8-23d9c99b3647.svg'></img>
+                    <button className='Jokelist-getmore'>New Jokes</button>
+                </section>
                 <section className='JokeList-jokes'>
                     {this.state.jokes.map(joke => (
                         <div>{joke}</div>
