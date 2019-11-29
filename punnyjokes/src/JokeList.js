@@ -77,7 +77,7 @@ class JokeList extends Component {
                 <section className='JokeList-sidebar'>
                     <h1 className='JokeList-title'><span>Punny</span> Jokes</h1>
                     <img src='https://assets.dryicons.com/uploads/icon/svg/8927/0eb14c71-38f2-433a-bfc8-23d9c99b3647.svg'></img>
-                    <button className='Jokelist-getmore' onClick={this.handleClick}>New Jokes</button>
+                    <button className='JokeList-getmore' onClick={this.handleClick}>New Jokes</button>
                 </section>
                 <section className='JokeList-jokes'>
                     {jokes.map(joke => (
