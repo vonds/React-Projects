@@ -71,6 +71,7 @@ class JokeList extends Component {
                 </section>
             )
         }
+        const jokes = this.state.jokes.sort((a,b) => b.vote - a.vote) 
         return (
             <section className='JokeList'>
                 <section className='JokeList-sidebar'>
@@ -79,7 +80,7 @@ class JokeList extends Component {
                     <button className='Jokelist-getmore' onClick={this.handleClick}>New Jokes</button>
                 </section>
                 <section className='JokeList-jokes'>
-                    {this.state.jokes.map(joke => (
+                    {jokes.map(joke => (
                         <Joke 
                             key={joke.id} 
                             text={joke.text} 
