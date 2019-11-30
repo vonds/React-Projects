@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-import { Switch, Route } from 'react-router-dom'
 import Navbar from './Navbar'
-import DogList from './DogList'
+import Routes from './Routes'
 import DogDetails from './DogDetails'
 import whiskey from './image/whiskey.jpg'
 import moofy from './image/moofy.jpg'
@@ -44,23 +43,12 @@ class App extends Component {
     ]
   }
   render() {
-    const getDog = props => {
-      let name = props.match.params.name
-      let currentDog = this.props.dogs.find(
-        dog => dog.name.toLowerCase() === name.toLowerCase()
-      )
-      return  <DogDetails {...props} dog={currentDog} />
-    }
+    
 
     return (
       <section className='App'>
         <Navbar dogs={this.props.dogs}/>
-        <Switch>
-          <section className='container'>
-            <Route exact path='/dogs' render={() => <DogList dogs={this.props.dogs} />} />
-            <Route exact path='/dogs/:name' render={getDog} />
-          </section> 
-        </Switch>
+        <Routes dogs={this.props.dogs}/>
       </section>    
     );
   }
