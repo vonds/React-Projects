@@ -7,7 +7,7 @@ class App extends Component {
     return (
       <section className="App">
         <h1>React Colors App</h1>
-        <Palette {...seedColors[4]}/>
+        <Palette {...seedColors[2]}/>
       </section>
     )
   }
