@@ -8,7 +8,6 @@ class App extends Component {
   render() { 
     return (
       <section className="App">
-        <h1>React Colors App</h1>
         <Palette palette={generatePalette(seedColors[4])} />
       </section>
     )
