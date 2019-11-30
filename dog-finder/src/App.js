@@ -54,7 +54,7 @@ class App extends Component {
 
     return (
       <section className='App'>
-        <Navbar />
+        <Navbar dogs={this.props.dogs}/>
         <Switch>
           <section className='container'>
             <Route exact path='/dogs' render={() => <DogList dogs={this.props.dogs} />} />
