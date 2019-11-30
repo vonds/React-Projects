@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Navbar from './Navbar'
 import Routes from './Routes'
-import DogDetails from './DogDetails'
 import whiskey from './image/whiskey.jpg'
 import moofy from './image/moofy.jpg'
 import hazel from './image/hazel.jpg'
