@@ -30,6 +30,10 @@ class App extends Component {
             />
           )}
         />
+        <Route 
+          exact
+          path='/palette/:paletteId/:colorId' r
+          ender={() => <h1>Single Color Page</h1>} />
       </Switch>
       
       // <section className="App">
