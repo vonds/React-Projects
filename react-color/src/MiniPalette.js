@@ -54,7 +54,7 @@ function MiniPalette(props) {
         ></div>
     ))
     return (
-        <section className={classes.root}>
+        <section className={classes.root} onClick={props.handleClick}>
             <section className={classes.colors}>
                 {miniColorBoxes}
             </section>
