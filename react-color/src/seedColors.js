@@ -1,28 +1,28 @@
 export default [
     {
-        paletteName: 'Material UI Colors',
-        id: 'material-ui-colors',
-        emoji: '🎨',
-        colors:  [
-            {name: 'red', color: '#F44336'},
-            {name: 'pink', color: '#E91E63 '},
-            {name: 'purple', color: '#9C27B0'},
-            {name: 'deeppurple', color: '#673AB7'},
-            {name: 'indigo', color: '#3F51B5'},
-            {name: 'blue', color: '#2196F3'},
-            {name: 'lightblue', color: '#03A9F4'},
-            {name: 'cyan', color: '#00BCD4'},
-            {name: 'teal', color: '#009688'},
-            {name: 'green', color: '#4CAF50'},
-            {name: 'lightgreen', color: '#8BC34A'},
-            {name: 'lime', color: '#CDDC39'},
-            {name: 'yellow', color: '#FFEB3B'},
-            {name: 'amber', color: '#FFC107'},
-            {name: 'orange', color: '#FF9800'},
-            {name: 'deeporange', color: '#FF5722'},
-            {name: 'brown', color: '#795548'},
-            {name: 'grey', color: '#9E9E9E'},
-            {name: 'bluegrey', color: '#607D8B'}
+        paletteName: "Material UI Colors",
+        id: "material-ui-colors",
+        emoji: "🎨",
+        colors: [
+            { name: "red", color: "#F44336" },
+            { name: "pink", color: "#E91E63" },
+            { name: "purple", color: "#9C27B0" },
+            { name: "deeppurple", color: "#673AB7" },
+            { name: "indigo", color: "#3F51B5" },
+            { name: "blue", color: "#2196F3" },
+            { name: "lightblue", color: "#03A9F4" },
+            { name: "cyan", color: "#00BCD4" },
+            { name: "teal", color: "#009688" },
+            { name: "green", color: "#4CAF50" },
+            { name: "lightgreen", color: "#8BC34A" },
+            { name: "lime", color: "#CDDC39" },
+            { name: "yellow", color: "#FFEB3B" },
+            { name: "amber", color: "#FFC107" },
+            { name: "orange", color: "#FF9800" },
+            { name: "deeporange", color: "#FF5722" },
+            { name: "brown", color: "#795548" },
+            { name: "grey", color: "#9E9E9E" },
+            { name: "bluegrey", color: "#607D8B" }
         ]
     },
     {
@@ -80,30 +80,30 @@ export default [
         ]
     },
     {
-        paletteName: 'Flat UI Colors American',
-        id: 'flat-ui-colors-american',
-        emoji: '🇺🇸',
+        paletteName: "Flat UI Colors American",
+        id: "flat-ui-colors-american",
+        emoji: "🇺🇸",
         colors: [
-            { name: 'LightGreenishBlue', color: '#55efc4' },
-            { name: 'FadedPoster', color: '#81ecec' },
-            { name: 'GreenDarnerTail', color: '#74b9ff' },
-            { name: 'ShyMoment', color: '#a29bfe' },
-            { name: 'CityLights', color: '#dfe6e9' },
-            { name: 'MintLeaf', color: '#00b894' },
-            { name: 'RobinsEggBlue', color: '#00cec9' },
-            { name: 'ElectronBlue', color: '#0984e3' },
-            { name: 'ExodusFruit', color: '#6c5ce7' },
-            { name: 'SoothingBreeze', color: '#b2bec3' },
-            { name: 'SourLemon', color: '#ffeaa7' },
-            { name: 'FirstDate', color: '#fab1a0' },
-            { name: 'PinkGlamour', color: '#ff7675' },
-            { name: 'Pico89Pink', color: '#fd79a8' },
-            { name: 'AmericanRiver', color: '#636e72' },
-            { name: 'BrightYarrow', color: '#fdcc6e' },
-            { name: 'OrangeVile', color: '#e17055' },
-            { name: 'Chi-Qong', color: '#d63031' },
-            { name: 'PrunusAvium', color: '#e84393' },
-            { name: 'DraculaOrchid', color: '#2d3436' }
+            { name: "LightGreenishBlue", color: "#55efc4" },
+            { name: "FadedPoster", color: "#81ecec" },
+            { name: "GreenDarnerTail", color: "#74b9ff" },
+            { name: "ShyMoment", color: "#a29bfe" },
+            { name: "CityLights", color: "#dfe6e9" },
+            { name: "MintLeaf", color: "#00b894" },
+            { name: "RobinsEggBlue", color: "#00cec9" },
+            { name: "ElectronBlue", color: "#0984e3" },
+            { name: "ExodusFruit", color: "#6c5ce7" },
+            { name: "SoothingBreeze", color: "#b2bec3" },
+            { name: "SourLemon", color: "#ffeaa7" },
+            { name: "FirstDate", color: "#fab1a0" },
+            { name: "PinkGlamour", color: "#ff7675" },
+            { name: "Pico8Pink", color: "#fd79a8" },
+            { name: "AmericanRiver", color: "#636e72" },
+            { name: "BrightYarrow", color: "#fdcb6e" },
+            { name: "OrangeVille", color: "#e17055" },
+            { name: "Chi-Gong", color: "#d63031" },
+            { name: "PrunusAvium", color: "#e84393" },
+            { name: "DraculaOrchid", color: "#2d3436" }
         ]
     },
     {
@@ -241,4 +241,4 @@ export default [
             { name: "ReefEncounter", color: "#079992" }
         ]
     }
-]
+];
