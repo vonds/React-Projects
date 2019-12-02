@@ -1,4 +1,4 @@
-import { withTheme } from "@material-ui/styles";
+
 
 export default {
     root: {
@@ -21,7 +21,6 @@ export default {
         justifyContent: 'space-between',
         color: 'white',
         alignItems: 'center',
-        color:  'white',
         '& a': {
             color: 'white',
             textDecoration: 'none'
