@@ -3,11 +3,9 @@ import React, { Component } from 'react'
 class SearchBar extends Component {
     state = { search: '' }
 
-    handleChange = (e) => {
-        this.setState({ search: e.target.value })
-    }
+    onInputChange = e => this.setState({ search: e.target.value })
 
-    handleSubmit = (e) => {
+    onFormSubmit = e => {
         e.preventDefault()
         this.setState({ search: '' })
     }
@@ -16,10 +14,16 @@ class SearchBar extends Component {
         const { search } = this.state
         return (
             <section className='SearchBar ui segment'>
-                <form className='ui form' onSubmit={this.handleSubmit}>
+                <form className='ui form' onSubmit={this.onFormSubmit}>
                     <section className='field'>
                         <label htmlFor='search'>Image Search</label>
-                        <input className='ui segment' type='text' id='search' onChange={this.handleChange} value={search} />
+                        <input 
+                            className='ui segment' 
+                            type='text' 
+                            id='search' 
+                            onChange={this.onInputChange} 
+                            value={search} 
+                        />
                     </section> 
                 </form>
             </section>
