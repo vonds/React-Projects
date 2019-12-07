@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { Component } from 'react'
 import SearchBar from './SearchBar'
 
-const App = () => {
-    return (
-        <section className='App ui container' style={{ marginTop: '10px' }}>
-            <SearchBar />
-        </section>
-    )
+class App extends Component {
+
+    onSubmitSearch = search => console.log(search)
+
+    render() {
+        return (
+            <section className='App ui container' style={{ marginTop: '10px' }}>
+                <SearchBar onSubmit={this.onSubmitSearch} />
+            </section>
+        )
+    }
 }
 
 export default App
