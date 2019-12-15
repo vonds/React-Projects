@@ -1,3 +1,5 @@
+import { createStore } from 'redux'
+
 export const  increaseCount = (amount = 1) => ({
         type: 'INCREASE_COUNT',
         payload: amount
@@ -18,3 +20,5 @@ export const reducer = (state = DEFAULT_STATE, action = {}) => {
 
     return state
 }
+
+export const store = createStore(reducer)
