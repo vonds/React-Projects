@@ -1,20 +1,61 @@
-import { combineReducers } from 'redux'
+import { combineReducers } from "redux"
+
+// 1
+
+// 2
+
+// 3
+
+// 4
+
+// 5
 
 const songsReducer = () => {
     return [
-        { title: 'Serene', duration: '2:25' },
-        { title: 'Dream Dealer', duration: '2:16' },
-        { title: 'Majinbuu94', duration: '1:36' },
-        { title: 'Being in Love with U', duration: '3:30' }
+        { title: '4:20', duration: '4:20'},
+        { title: 'Gone', duration: '2:01'},
+        { title: 'Duck in a box', duration: '2:20'},
+        { title: 'Jazzy Winter', duration: '1:46'}
     ]
 }
 
-const selectedSongReducer = (selectedSong = null, action) => {
-    if (action.type === 'SONG_SELECTED' ) return action.payload
+// 1
+
+// 2
+
+// 3
+
+// 4
+
+// 5
+
+const selectedSongReducer = (selectedSong=null, action) => {
+    if (action.type === 'SONG_SELECTED') return action.payload
     return selectedSong
 }
+
+// 1
+
+// 2
+
+// 3
+
+// 4
+
+// 5
 
 export default combineReducers({
     songs: songsReducer,
     selectedSong: selectedSongReducer
 })
+
+// 1
+
+// 2
+
+// 3
+
+// 4
+
+// 5
+

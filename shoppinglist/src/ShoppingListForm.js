@@ -3,11 +3,7 @@ import React, {Component} from 'react'
 class ShoppingListForm extends Component {
     constructor(props) {
         super(props)
-        this.state = {
-            name: '',
-            qty: ''
-        }
-
+        this.state = { name: '', qty: '' }
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
     }

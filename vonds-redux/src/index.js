@@ -1,8 +1,8 @@
-import store from './store'
-import { VANILLA } from './constants/flavors'
-import { actions } from './ducks/freezer'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './components/App/App'
 
-store.subscribe(() => console.log(store.getState()))
-
-store.dispatch(actions.updateTemperature(-8))
-store.dispatch(actions.addProductToFreezer(VANILLA, 15))
+ReactDOM.render(
+    <App/>,
+    document.querySelector('#root')
+)

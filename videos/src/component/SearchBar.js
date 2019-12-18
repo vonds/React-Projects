@@ -2,15 +2,15 @@ import React, { Component } from 'react'
 
 class SearchBar extends Component {
 
-    state={ term: '' }
+    state={ search: '' }
   
     onInputChange = e => {
-        this.setState({ term: e.target.value })
+        this.setState({ search: e.target.value })
     }
 
     onFormSubmit = e => {
         e.preventDefault()
-        // callback to search api
+        this.props.onSearchSubmit(this.state.search)
     }
 
     render() {
@@ -22,7 +22,7 @@ class SearchBar extends Component {
                         <input 
                             type='text' 
                             onChange={this.onInputChange}    
-                            value={this.state.term}
+                            value={this.state.search}
                         />
                     </section>
                 </form>

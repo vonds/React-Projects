@@ -13,33 +13,7 @@ class Navbar extends Component {
     render() {
         const { classes } = this.props
         return (
-            <section className={classes.root}>
-                <AppBar position='static' color='primary'>
-                    <Toolbar>
-                        <IconButton className={classes.menuButton} color='inherit'>
-                            <span>🇫🇷</span>
-                        </IconButton>
-                        <Typography 
-                            className={classes.title} 
-                            variant='h6'
-                            color='inherit'
-                        >
-                            App Title
-                        </Typography>
-                        <Switch />
-                        <section className={classes.grow}></section>
-                        <section className={classes.search}>
-                            <section className={classes.searchIcon}>
-                                <SearchIcon />
-                                <InputBase placeholder='Search...' classes={{
-                                    root: classes.inputRoot,
-                                    input: classes.inputInput
-                                }}/>
-                            </section>
-                        </section>
-                    </Toolbar>
-                </AppBar>
-            </section>
+           
         )
     }
 }

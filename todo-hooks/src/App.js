@@ -1,13 +1,13 @@
-import React from 'react';
+import React from 'react'
 import TodoApp from './TodoApp'
-import './App.css';
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
+    <section className='App'>
       <TodoApp />
-    </div>
-  );
+    </section>
+  )
 }
 
-export default App;
+export default App

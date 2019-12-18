@@ -21,11 +21,11 @@ class ImageCard extends Component {
         const { description, urls } = this.props.image
         return (
             <section style={{ gridRowEnd: `span ${this.state.spans}`}}>
-                <img ref={this.imageRef} alt={ description } src={ urls.regular }
-                 />
+                <img ref={this.imageRef} alt={ description } src={ urls.regular }/>
             </section>
         )
     }
 }
 
 export default ImageCard
+
